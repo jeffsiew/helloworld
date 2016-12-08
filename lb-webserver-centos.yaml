@@ -54,7 +54,10 @@ resources:
                 cat <<EOF > /var/www/html/hostname.php
                 <?php echo "Hello, My name is " . php_uname('n'); ?>
                 EOF
-
+              params:
+                hostip: 192.168.122.70
+                fqdn: sat6.lab.com
+                shortname: sat
   web_server_scaleup_policy:
     type: OS::Heat::ScalingPolicy
     properties:
