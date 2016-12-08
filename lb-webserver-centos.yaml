@@ -36,7 +36,7 @@ resources:
       desired_capacity: 1
       resource:
         type: file:///etc/heat/templates/lb-env.yaml
-                properties:
+        properties:
           flavor: {get_param: flavor}
           image: {get_param: image}
           key_name: {get_param: key_name}
