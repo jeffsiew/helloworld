@@ -8,7 +8,7 @@ parameters:
   key_name:
     type: string
     description: SSH key to connect to the servers
-    default: MSP-Key
+    default: centos-key01
   flavor:
     type: string
     description: flavor used by the web servers
@@ -20,11 +20,11 @@ parameters:
   subnet_id:
     type: string
     description: subnet on which the load balancer will be located
-    default: 665b5663-7a4f-4d8b-b504-0f20139b6385
+    default: 999cca59-1261-4fe8-aa37-eb43363f51b1
   external_network_id:
     type: string
     description: UUID of a Neutron external network
-    default: 58ed6dcd-677a-437f-b75b-13ee9238054f
+    default: c7aab4f5-f666-45cc-912f-bd0edfc431f4
 
 resources:
   webserver:
